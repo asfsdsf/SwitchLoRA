@@ -1,6 +1,18 @@
 # SwitchLoRA
 
-[TOC]
+- [SwitchLoRA](#switchlora)
+  * [Overview](#overview)
+  * [Quick start](#quick-start)
+    + [Enviroment setup](#enviroment-setup)
+    + [Download data](#download-data)
+    + [Options](#options)
+    + [Use SwitchLoRA for pre-training](#use-switchlora-for-pre-training)
+  * [Experiments on LLaMA models](#experiments-on-llama-models)
+    + [**Basic experiments**](#--basic-experiments--)
+    + [**Comparison with other methods**](#--comparison-with-other-methods--)
+    + [**Reasoning ability comparison**](#--reasoning-ability-comparison--)
+  * [TODO](#todo)
+  * [References](#references)
 
 ## Overview
 
