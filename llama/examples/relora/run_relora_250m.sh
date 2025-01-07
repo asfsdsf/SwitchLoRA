@@ -1,0 +1,2 @@
+torchrun --nproc-per-node 8 torchrun_main.py --model_config configs/llama_250m.json --dataset_path ../preprocessed_data/allenai/c4_en_t5-base_512 --batch_size 72 --total_batch_size 1152 --lr 1e-3 --max_length 512 --use_peft True --relora 5000 --cycle_length 5000 --restart_warmup_steps 100 --scheduler cosine_restarts --warmup_steps 500 --reset_optimizer_on_relora True --num_training_steps 21000 --keep_checkpoints 3 --save_every 2000 --eval_every 1000 --warmed_up_model checkpoints/relora_250m_full/model_1000 --save_dir checkpoints/relora_250m_relora1000 --tags relora_250M
+

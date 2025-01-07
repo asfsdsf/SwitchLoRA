@@ -1,0 +1,2 @@
+torchrun --standalone --nproc_per_node 4 torchrun_main.py --model_config configs/llama_350m.json --max_length 256 --lr 0.01 --galore_scale 0.25 --rank 256 --update_proj_gap 200 --batch_size 128 --total_batch_size 512 --num_training_steps 60000 --warmup_steps 6000 --weight_decay 0 --dtype bfloat16 --eval_every 1000 --save_every 5000 --optimizer galore_adamw --save_dir checkpoints/llama_350m_galore_seq256
+
